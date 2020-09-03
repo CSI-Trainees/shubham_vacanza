@@ -36,13 +36,22 @@
   }
 
   .csi{
-    margin: 10px;
-    position: relative;
-    display: block;
-    font-size: 10px;
-    color: white;
+   
+      position: static;
+      top: 16px;
+      color: black;
+      font-size: 110%;
+      margin-top:20px;
+      letter-spacing: 3px;
+      font-family: sans-serif;
+      margin-left: 10px;
+      text-decoration: none;
+      font-weight: 200;
 
   }
+      
+
+  
   
 .logo {
   background-image: url(images/logo.png);
@@ -203,6 +212,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 .footer::before{
     content: "";
@@ -212,6 +222,7 @@
     background-size: cover;
     background-blend-mode:color;
     animation: foot 15s infinite;
+    overflow: hidden;
 }
 @keyframes foot{
     0%{
@@ -226,19 +237,49 @@
 
 
 }
-    .footer__legal {
+  .footer__legal {
       color: #eeeeee;
       font-size: 1.2rem;
       background:transparent;
-      margin-top: auto;
-      align-self: stretch;
+      margin-top: 100px;
+      align-self: stretch;o;
       text-align: center;
       z-index: 10;
       margin:0;
       padding-left: 200px;
       padding-right: 200px;
       position: relative;
-  }
+      
+  } 
+
+  .footer-logo {
+    width: 25%;
+    height: 35px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0px;
+    z-index: 10;
+    border-bottom: 1px dotted white;
+}
+
+.fab{
+  color: white;
+  font-size: 200%;
+  margin-right: 23px;
+}
+
+.fa-youtube{
+  margin-left:80px;
+}
+
+.fa-facebook-square{
+  margin-right: 50px;
+
+}
+
+
 
 
 
